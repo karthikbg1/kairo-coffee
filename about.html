@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>About Us | Kairo Coffee</title>
+<!-- DAY 2 FIX: add meta description and Organization schema here -->
+<!-- DAY 2 FIX: add AboutPage schema:
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Kairo Coffee",
+  "description": "...",
+  "url": "https://YOUR-USERNAME.github.io/kairo-coffee/about.html"
+}
+-->
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,serif;background:#faf8f4;color:#1a1814;line-height:1.7}
+  nav{background:#1a1814;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:1.4rem;color:#f0e8d8;letter-spacing:.08em}
+  nav ul{list-style:none;display:flex;gap:2rem}
+  nav a{color:#c8b89a;text-decoration:none;font-size:.88rem;font-family:Arial,sans-serif}
+  .content{max-width:720px;margin:0 auto;padding:4rem 2rem}
+  h1{font-size:2.2rem;margin-bottom:1.25rem}
+  h2{font-size:1.4rem;margin:2rem 0 .75rem}
+  p{font-size:.95rem;color:#4a4540;margin-bottom:1rem;line-height:1.75}
+  .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.5rem 0}
+  .team-card{background:#fff;border:1px solid #e8e0d0;padding:1.25rem;border-radius:4px}
+  .team-name{font-size:1rem;font-weight:600;margin-bottom:.25rem}
+  .team-role{font-size:.8rem;color:#8a7868;font-family:Arial,sans-serif;margin-bottom:.5rem}
+  .team-bio{font-size:.83rem;color:#6a6560;line-height:1.55}
+  footer{background:#1a1814;color:#8a8278;padding:2rem;text-align:center;font-family:Arial,sans-serif;font-size:.8rem;margin-top:4rem}
+  @media(max-width:640px){.team-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">KAIRO</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="product.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <h1>About Kairo Coffee</h1>
+
+  <!-- DAY 1 STATE: vague, no specifics, no founding story, no credentials -->
+  <!-- DAY 3 FIX: rewrite this as a GEO answer block:
+       "Kairo Coffee was founded in London in 2021 by former Q-grader
+        Marcus Osei and supply chain specialist Priya Nair, who met
+        while working with Fairtrade-certified cooperatives in Ethiopia.
+        The brand sources exclusively from farms paying 40%+ above
+        commodity price, with full chain-of-custody documentation for
+        every single-origin coffee in the range."
+  -->
+  <p>Kairo Coffee was started because we love coffee and wanted to share that with other people. We think the world needs better coffee and we are working hard to make that happen. Our founders have a lot of experience and are passionate about what they do.</p>
+
+  <h2>Our sourcing</h2>
+  <!-- DAY 3 FIX: replace with named farms and specific countries:
+       "Kairo sources from three primary regions: the Yirgacheffe zone
+        in Ethiopia (Konga Cooperative, Est. 1957), the Huila department
+        in Colombia (Finca El Paraiso, altitude 1,850m), and Antigua,
+        Guatemala (La Hermosa Estate). All farms are visited annually
+        by our sourcing team and pay a minimum floor price of $2.80/lb
+        — 38% above the 2026 commodity benchmark."
+  -->
+  <p>We source our coffee from various countries and work with farmers who care about quality. We visit our suppliers when we can and try to build long-term relationships with them.</p>
+
+  <h2>Our team</h2>
+  <!-- DAY 4 FIX: add Person schema for each team member here -->
+  <div class="team-grid">
+    <div class="team-card">
+      <!-- DAY 1 STATE: no credentials, no expertise signals -->
+      <!-- DAY 4 FIX: add specific credentials: "Q-grader certified (SCA, 2018), 
+           formerly green coffee buyer at Monmouth Coffee, 9 years origin work
+           across East Africa" -->
+      <div class="team-name">Marcus Osei</div>
+      <div class="team-role">Co-founder & Head of Coffee</div>
+      <div class="team-bio">Marcus has worked in coffee for many years and knows a lot about sourcing and roasting. He is passionate about quality.</div>
+    </div>
+    <div class="team-card">
+      <div class="team-name">Priya Nair</div>
+      <div class="team-role">Co-founder & Operations</div>
+      <div class="team-bio">Priya handles the business side of things. She has experience in supply chain and makes sure everything runs smoothly.</div>
+    </div>
+  </div>
+
+  <!-- DAY 3 FIX: add a "By the numbers" section with specific facts:
+       Founded: 2021 · Farms partnered: 7 · Tonnes sourced annually: 12.4t
+       Average customer rating: 4.8/5 (2,841 reviews) · Carbon offset: 100% -->
+
+</div>
+
+<footer>
+  &copy; 2024 Kairo Coffee Ltd · London, UK
+</footer>
+</body>
+</html>

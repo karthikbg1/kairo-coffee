@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FAQ | Kairo Coffee</title>
+
+<!-- DAY 5 FIX: add FAQPage schema here.
+     RULES for GEO-compliant FAQ answers:
+     - Each answer must be 2-3 complete sentences
+     - Must be citable verbatim by an AI engine
+     - Must actually answer the question directly (no "it depends")
+     - Must include a specific fact or figure
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Kairo Coffee cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kairo Coffee subscriptions start at £14.99/month for 250g of single-origin beans delivered fortnightly. The Explorer plan (£24.99/month) includes 500g with weekly delivery and a rotating origin selection, while the Connoisseur plan (£39.99/month) adds 1kg, micro-lot access, and direct contact with the roasting team. All plans are pause-or-cancel anytime with no minimum contract."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Kairo Coffee good for beginners?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Kairo Coffee's Starter subscription is specifically designed for people new to specialty coffee — each delivery includes printed tasting notes and a beginner's brew guide written by SCA-certified Q-grader Marcus Osei. The beans are medium-roasted and selected for approachability, with flavour profiles that work well with standard home equipment including cafetière, filter, and AeroPress."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does Kairo Coffee source its beans?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kairo Coffee sources exclusively from three regions: the Yirgacheffe zone in Ethiopia (Konga Cooperative), the Huila department in Colombia (Finca El Paraiso, altitude 1,850m), and Antigua, Guatemala (La Hermosa Estate). All farms are visited annually by our sourcing team and pay a minimum floor price of £2.80/lb — 38% above the 2026 commodity benchmark."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How fresh is the coffee when it arrives?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every Kairo Coffee order is roasted within 48 hours of dispatch — the roast date is printed on every bag. Beans are shipped in nitrogen-flushed, one-way valve bags that preserve freshness for up to 4 weeks after roasting. Kairo's freshness guarantee means any bag arriving more than 5 days from roast date is replaced free of charge."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I cancel my Kairo Coffee subscription?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — Kairo Coffee subscriptions can be paused or cancelled at any time with no fees, penalties, or minimum notice period. Changes take effect before the next dispatch cycle, which runs every Monday. To cancel, log into your account dashboard or email hello@kairocoffee.com — cancellations are processed within 2 hours during working hours."
+      }
+    }
+  ]
+}
+-->
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,serif;background:#faf8f4;color:#1a1814;line-height:1.7}
+  nav{background:#1a1814;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:1.4rem;color:#f0e8d8;letter-spacing:.08em}
+  nav ul{list-style:none;display:flex;gap:2rem}
+  nav a{color:#c8b89a;text-decoration:none;font-size:.88rem;font-family:Arial,sans-serif}
+  .content{max-width:720px;margin:0 auto;padding:4rem 2rem}
+  h1{font-size:2.2rem;margin-bottom:.5rem}
+  .intro{font-size:.9rem;color:#6a6560;margin-bottom:2.5rem}
+  .faq-item{border-bottom:1px solid #e8e0d0;padding:1.5rem 0}
+  .faq-item:first-of-type{border-top:1px solid #e8e0d0}
+  .faq-q{font-size:1.05rem;font-weight:600;margin-bottom:.75rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+  .faq-q::after{content:'+';font-weight:300;font-size:1.3rem;color:#8a7868}
+  .faq-q.open::after{content:'−'}
+  .faq-a{font-size:.9rem;color:#4a4540;line-height:1.75;display:none}
+  .faq-a.open{display:block}
+  .schema-note{background:#f0ece4;border-left:3px solid #8a7868;padding:.75rem 1rem;margin-bottom:2rem;font-size:.8rem;color:#6a6560;font-family:Arial,sans-serif}
+  footer{background:#1a1814;color:#8a8278;padding:2rem;text-align:center;font-family:Arial,sans-serif;font-size:.8rem;margin-top:4rem}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">KAIRO</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="product.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <h1>Frequently asked questions</h1>
+  <p class="intro">Questions about our coffee, subscriptions, and delivery.</p>
+
+  <!-- DAY 1 STATE: answers are vague and not AI-extractable -->
+  <!-- DAY 5 FIX: replace each answer with the text from the FAQPage schema above.
+       The visible answer and the schema answer must match exactly. -->
+
+  <div class="faq-item">
+    <div class="faq-q">How much does Kairo Coffee cost?</div>
+    <!-- DAY 1 STATE: vague, no specific prices -->
+    <!-- DAY 5 FIX: "Kairo Coffee subscriptions start at £14.99/month..." (match your schema) -->
+    <div class="faq-a">We have a few different plans at different price points to suit different budgets. Please see our shop page for current pricing.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Is Kairo Coffee good for beginners?</div>
+    <!-- DAY 5 FIX: specific answer with product recommendation and named credentials -->
+    <div class="faq-a">Yes, we think our coffee is suitable for most people including those who are new to specialty coffee. We try to make things easy to understand.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Where does Kairo Coffee source its beans?</div>
+    <!-- DAY 5 FIX: named farms, countries, and price floor data -->
+    <div class="faq-a">We source from various countries around the world where great coffee is grown. We work with farmers who care about quality and sustainability.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">How fresh is the coffee when it arrives?</div>
+    <!-- DAY 5 FIX: specific 48-hour roast-to-dispatch and freshness guarantee -->
+    <div class="faq-a">We try to make sure the coffee is as fresh as possible when it reaches you. We roast regularly and ship promptly.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-q">Can I cancel my subscription?</div>
+    <!-- DAY 5 FIX: specific no-fees, no-notice-period policy with timeline -->
+    <div class="faq-a">Yes, you can cancel at any time. Just get in touch with us and we will sort it out for you.</div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2024 Kairo Coffee Ltd · London, UK
+</footer>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const a=q.nextElementSibling;
+    const open=a.classList.contains('open');
+    document.querySelectorAll('.faq-a').forEach(x=>x.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(x=>x.classList.remove('open'));
+    if(!open){a.classList.add('open');q.classList.add('open')}
+  });
+});
+</script>
+</body>
+</html>

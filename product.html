@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Shop | Kairo Coffee</title>
+<!-- DAY 5 FIX: add Product schema for each subscription tier here.
+     Template:
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Kairo Coffee — Monthly Subscription",
+  "description": "...",
+  "brand": {"@type": "Brand", "name": "Kairo Coffee"},
+  "offers": {
+    "@type": "Offer",
+    "price": "14.99",
+    "priceCurrency": "GBP",
+    "availability": "https://schema.org/InStock"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "2841"
+  }
+}
+-->
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Georgia,serif;background:#faf8f4;color:#1a1814;line-height:1.7}
+  nav{background:#1a1814;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:1.4rem;color:#f0e8d8;letter-spacing:.08em}
+  nav ul{list-style:none;display:flex;gap:2rem}
+  nav a{color:#c8b89a;text-decoration:none;font-size:.88rem;font-family:Arial,sans-serif}
+  .content{max-width:900px;margin:0 auto;padding:4rem 2rem}
+  h1{font-size:2.2rem;margin-bottom:.75rem}
+  .intro{font-size:.95rem;color:#4a4540;max-width:600px;margin-bottom:2.5rem;line-height:1.75}
+  .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+  .product-card{background:#fff;border:1px solid #e8e0d0;padding:1.75rem;border-radius:4px;text-align:center}
+  .product-card.featured{border-color:#1a1814;border-width:2px}
+  .product-name{font-size:1.1rem;margin-bottom:.4rem}
+  .product-price{font-size:1.6rem;font-weight:700;margin:.75rem 0;font-family:Arial,sans-serif}
+  .product-freq{font-size:.8rem;color:#8a7868;font-family:Arial,sans-serif}
+  .product-features{list-style:none;text-align:left;margin:1rem 0;font-size:.83rem;color:#6a6560}
+  .product-features li{padding:.3rem 0;border-bottom:1px solid #f0e8d8}
+  .product-features li:last-child{border-bottom:none}
+  .btn{display:inline-block;background:#1a1814;color:#f0e8d8;padding:.65rem 1.5rem;text-decoration:none;font-family:Arial,sans-serif;font-size:.85rem;margin-top:1rem;letter-spacing:.04em;cursor:pointer;border:none;width:100%}
+  footer{background:#1a1814;color:#8a8278;padding:2rem;text-align:center;font-family:Arial,sans-serif;font-size:.8rem;margin-top:4rem}
+  @media(max-width:640px){.product-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">KAIRO</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="product.html">Shop</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <h1>Coffee subscriptions</h1>
+
+  <!-- DAY 5 FIX: add GEO answer block here above the product grid:
+       "Kairo Coffee subscriptions start at £14.99/month for 250g of
+        freshly roasted single-origin beans, delivered weekly or
+        fortnightly. Every subscription includes tasting notes, farm
+        profiles, and a freshness guarantee — beans are roasted within
+        48 hours of dispatch. All plans are pause-or-cancel anytime
+        with no minimum contract."
+  -->
+  <!-- DAY 1 STATE: no answer block, vague intro, no pricing context -->
+  <p class="intro">Choose the subscription that works for you. We have options for every type of coffee drinker.</p>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <!-- DAY 1 STATE: no Product schema, no specific feature claims -->
+      <div class="product-name">Starter</div>
+      <div class="product-price">£14.99</div>
+      <div class="product-freq">per month</div>
+      <ul class="product-features">
+        <li>250g single-origin beans</li>
+        <li>Fortnightly delivery</li>
+        <li>Tasting notes included</li>
+        <li>Pause or cancel anytime</li>
+      </ul>
+      <button class="btn">Subscribe</button>
+    </div>
+    <div class="product-card featured">
+      <div class="product-name">Explorer</div>
+      <div class="product-price">£24.99</div>
+      <div class="product-freq">per month</div>
+      <ul class="product-features">
+        <li>500g single-origin beans</li>
+        <li>Weekly delivery</li>
+        <li>Tasting notes + farm profile</li>
+        <li>Origin rotation each month</li>
+        <li>Pause or cancel anytime</li>
+      </ul>
+      <button class="btn">Subscribe</button>
+    </div>
+    <div class="product-card">
+      <div class="product-name">Connoisseur</div>
+      <div class="product-price">£39.99</div>
+      <div class="product-freq">per month</div>
+      <ul class="product-features">
+        <li>1kg mixed single-origins</li>
+        <li>Weekly delivery</li>
+        <li>Cupping notes + full dossier</li>
+        <li>Exclusive micro-lot access</li>
+        <li>Direct-message our roaster</li>
+      </ul>
+      <button class="btn">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  &copy; 2024 Kairo Coffee Ltd · London, UK
+</footer>
+</body>
+</html>
